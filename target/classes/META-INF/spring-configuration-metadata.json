@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "product.properties",
+      "type": "com.sample.reactive.properties.ProductProperties",
+      "sourceType": "com.sample.reactive.properties.ProductProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "product.properties.max-base-price",
+      "type": "java.lang.Long",
+      "sourceType": "com.sample.reactive.properties.ProductProperties"
+    },
+    {
+      "name": "product.properties.min-base-price",
+      "type": "java.lang.Long",
+      "sourceType": "com.sample.reactive.properties.ProductProperties"
+    }
+  ],
+  "hints": []
+}

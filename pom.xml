@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.abinarystar.boot</groupId>
+        <artifactId>abinarystar-spring-boot-parent</artifactId>
+        <version>0.2.8</version>
+    </parent>
+
+    <groupId>com.sample-reactive</groupId>
+    <artifactId>reactive-sample</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+<!--        spring dependencies-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb-reactive</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bootstrap</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-sleuth</artifactId>
+        </dependency>
+
+<!--        third party dependencies-->
+        <dependency>
+            <groupId>com.abinarystar.boot</groupId>
+            <artifactId>abinarystar-spring-boot-command</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.abinarystar.boot</groupId>
+            <artifactId>abinarystar-spring-boot-data-mongodb</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.abinarystar.boot</groupId>
+            <artifactId>abinarystar-spring-boot-kafka</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.abinarystar.boot</groupId>
+            <artifactId>abinarystar-spring-boot-session</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.abinarystar.boot</groupId>
+            <artifactId>abinarystar-spring-boot-swagger</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.abinarystar.boot</groupId>
+            <artifactId>abinarystar-spring-boot-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-webflux-ui</artifactId>
+        </dependency>
+        <!-- test dependencies -->
+        <dependency>
+            <groupId>com.abinarystar.boot</groupId>
+            <artifactId>abinarystar-spring-boot-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+        <repository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>bintray-abinarystar-maven</id>
+            <url>https://dl.bintray.com/abinarystar/maven</url>
+        </repository>
+    </repositories>
+
+
+</project>
