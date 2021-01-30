@@ -1,6 +1,7 @@
 package com.sample.reactive.web.controller.item;
 
 import com.abinarystar.boot.command.reactive.executor.CommandExecutor;
+import com.abinarystar.boot.common.helper.ResponseHelper;
 import com.abinarystar.boot.common.model.web.response.Response;
 import com.abinarystar.boot.web.controller.reactive.BaseController;
 import org.springframework.http.MediaType;
@@ -21,6 +22,6 @@ public class ItemController extends BaseController {
 
     @GetMapping
     public Mono<Response<Boolean>> saveItem(){
-        return null;
+        return Mono.just(ResponseHelper.ok(Boolean.TRUE));
     }
 }
