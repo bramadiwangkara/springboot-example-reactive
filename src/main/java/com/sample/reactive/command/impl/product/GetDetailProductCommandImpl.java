@@ -9,8 +9,6 @@ import com.sample.reactive.web.model.response.product.GetDetailProductWebRespons
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 
-import java.util.Arrays;
-
 
 @Service
 public class GetDetailProductCommandImpl implements GetDetailProductCommand {
